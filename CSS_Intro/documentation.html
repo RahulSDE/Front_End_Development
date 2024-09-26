@@ -1,0 +1,88 @@
+<!-- 
+------RESOURCES TO BE USED FOR CSS?
+        * 1) color.adobe.com/explore -> to check color combination i.e. which combination will look good.
+          2) fontpair.co/all         -> to check the differnt kind of fonts that we can use for our website.
+          3) these website are used to read the documentation of css     -> css-tricks.com    
+                                                                         -> mdn css article 
+          
+-----WHAT IS CSS????
+        * css stand for "cascading style sheets"
+        * css uses cascading algorithm to  style the sheet.
+        * css is used in html to style the page.
+        * css is used by using style attributes of html.
+        * one valid css style or instruction ends with semi colon.
+        * there are three ways by which we can apply css
+            1) Inline css.
+            2) Internal css.
+            3) External css.
+        * one should never ever do inline css and should avoid internal css as much as possible.
+        * The css that is written later will be used for styling the sheet i.e. if more than one css code is styling the same 
+          html element then the css code written later will be given preference.
+                ex: 
+                    <style>
+                        span{
+                            font-size: 20px;
+                        }
+                        h2{
+                            color:blue;
+                        }
+                        </style>
+                        </head>
+                        <link rel="stylesheet" href="Style.css">
+
+                   -> In the above example h2 element is being applied css to change the color to blue in the internal css
+                      but in external css which is Style.css file h2 element is given css of color: gold
+                      Since external css is applied later hence h2 element color will be changed to gold.
+    
+------ WHAT IS INLINE CSS????
+        * Inline css means if there is an HTML element i.e. all the html element like h1, div, span etc. have special attribute 
+          name style where we can write a bunch of css.
+        * Inline css can be applied by using style attribute of an html element.
+        * For ex. 
+                <h2 style="color:gold; font=50px;"> Rahul singh </h2>.
+        * Inline css is not so good because when we write a lot of css then the html page
+           will not look that much good.
+        * hence Internal css is used.
+
+----- WHAT IS INTERNAL CSS????
+        * Internal css is used within the head tag of html document.
+        * This way of applying css is used to style a particular html tag.
+        * For ex:
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                    <style>
+                        span{
+                            font-size: 20px;
+                        }
+                    </style>
+                </head>
+        * this way of styling the html page is called internal because within the same page css
+          being used.
+        * Reasons why internal css is not preffered over external css??
+                -> There is the concept called "Separation of Concern" which says that in relevant file there should only be relevant code. 
+                   i.e. if there is html element in one file then that file should only contain html element to design the webpage.
+                        css code must be written in the separate file.
+
+---- WHAT IS EXTERNAL CSS?
+        * Extenal css is called external because the css is written in the other document.
+        * The html document in which css is to be applied has to be linked to this css file using link tag
+        * For ex.
+                <link rel="stylesheet" href="Style.css">
+
+---- CSS ATTRIBUTES TO STYLE THE SHEET
+            * color:
+                -> this color properties of css is used to provide color to the html element.
+                -> to impart color to the html element we can use the following properties
+                     ... directly specify the color name i.e. color=gold;
+                     ... specify the hexadecimal code of the color i.e. color = #00000000;
+                     ... specify the rgb combination of the color i.e. color = rgb(100,100,100);
+
+            * font-size: 
+                -> this attribute is used to change size of font of the html element.
+
+            * 
+    
+    
+    -->
