@@ -1,11 +1,11 @@
 <!-- 
-------RESOURCES TO BE USED FOR CSS?
+------RESOURCES TO BE USED FOR CSS?***********************************************
         * 1) color.adobe.com/explore -> to check color combination i.e. which combination will look good.
           2) fontpair.co/all         -> to check the differnt kind of fonts that we can use for our website.
           3) these website are used to read the documentation of css     -> css-tricks.com    
                                                                          -> mdn css article 
           
------WHAT IS CSS????
+-----WHAT IS CSS????***************************************************************
         * css stand for "cascading style sheets"
         * css uses cascading algorithm to  style the sheet.
         * css is used in html to style the page.
@@ -34,7 +34,7 @@
                       but in external css which is Style.css file h2 element is given css of color: gold
                       Since external css is applied later hence h2 element color will be changed to gold.
     
------- WHAT IS INLINE CSS????
+------ WHAT IS INLINE CSS????******************************************************
         * Inline css means if there is an HTML element i.e. all the html element like h1, div, span etc. have special attribute 
           name style where we can write a bunch of css.
         * Inline css can be applied by using style attribute of an html element.
@@ -44,7 +44,7 @@
            will not look that much good.
         * hence Internal css is used.
 
------ WHAT IS INTERNAL CSS????
+----- WHAT IS INTERNAL CSS????****************************************************
         * Internal css is used within the head tag of html document.
         * This way of applying css is used to style a particular html tag.
         * For ex:
@@ -65,24 +65,77 @@
                    i.e. if there is html element in one file then that file should only contain html element to design the webpage.
                         css code must be written in the separate file.
 
----- WHAT IS EXTERNAL CSS?
+---- WHAT IS EXTERNAL CSS?********************************************************
         * Extenal css is called external because the css is written in the other document.
         * The html document in which css is to be applied has to be linked to this css file using link tag
         * For ex.
                 <link rel="stylesheet" href="Style.css">
 
----- CSS ATTRIBUTES TO STYLE THE SHEET
-            * color:
-                -> this color properties of css is used to provide color to the html element.
-                -> to impart color to the html element we can use the following properties
-                     ... directly specify the color name i.e. color=gold;
-                     ... specify the hexadecimal code of the color i.e. color = #00000000;
-                     ... specify the rgb combination of the color i.e. color = rgb(100,100,100);
+---- CSS ATTRIBUTES TO STYLE THE SHEET.********************************************
+        * color:
+            -> this color properties of css is used to provide color to the html element.
+            -> to impart color to the html element we can use the following properties
+                ... directly specify the color name i.e. color=gold;
+                ... specify the hexadecimal code of the color i.e. color = #00000000;
+                ... specify the rgb combination of the color i.e. color = rgb(100,100,100);
 
-            * font-size: 
-                -> this attribute is used to change size of font of the html element.
+        * font-size: 
+            -> this attribute is used to change size of font of the html element.
+        
+        * background-color:
+            -> this attribute is used to change the color of the background of html element.
 
-            * 
+---- SELECTORS???*******************************************************************
+        * Selectors is a mechanism which css provide us to collectively select a bunch of html elements together
+          and style them together.
+        * There are different types of selectors based on which type of html elements it select.
+        
+        1) UNIVERSAL SELECTORS.
+                -> this selectors select everything in the html document and apply css rule to everything.
+                -> this selector select every html tag manually and apply styling to it.
+                -> represented by *
+                -> ex:
+                    * {
+                        background-color:blue;
+                    }
     
-    
+        2) TYPE SELECTOR:
+                -> this selector select a particular html element and then apply styling to it.
+                -> ex:
+                    h2{
+                        background-color: blue;
+                    }
+        
+        3) CLASS SELECTOR:
+                -> class selector says that all the element with corresponding given class attribute will be selected.
+                -> Syntax:
+                        .(class name){
+                        }
+                -> ex:
+                        .mid-text{
+                            background-color:red;
+                        }
+        
+        4) ID SELECTOR:
+                -> this selector selects the element with particular id attribute and apply styling to it.
+                -> Syntax:
+                        #(id-attribute-name){
+                        }
+                -> Ex:
+                        #head-text{
+                            text-decoration-line:underline;
+                            text-decoration-style:wavy;
+                        }
+
+        5) ATTRIBUTE SELECTOR:
+                -> this selector selects the html element having the mentioned attribute and apply styling to it.
+        
+        6) SELECTOR LIST:
+                -> agar aap ek se jyada html element pe same styling apply karna chahte hai to ek saath bhi kar sake hai
+                -> for ex. agar mai div tag and h2 tag dono html element pe same styling apply karna chahta hun to 
+                       mai , ka use karke kar sakta hun jaisa ki neeche diya gya hai.
+
+                       div,h2{
+                            font-size:larger;
+                       }
     -->

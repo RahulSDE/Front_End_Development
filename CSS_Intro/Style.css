@@ -1,6 +1,25 @@
-h4{
-    font-size: 20px;
+* {
+    /* this is universal selector and it selects all the html tags.*/
 }
-h2{
-    color:gold;
+
+body{
+    /* This is type selector and it selects only the specified html tag */
+    background-color: #F3f2ef;
+}
+
+header{
+    background-color: white;
+}
+
+.mid-text{
+    /* This is class selector and it selects all the html elements who has the same class name as mentioned in the selector. */
+    font-weight: bolder;
+    font-size: large;
+}
+
+#head-text{
+    /* This is id selector and it selects only the first one html tag who has the same id name as mentioned in the selector. */
+    font-size: 50px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
 }
