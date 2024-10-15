@@ -1,5 +1,8 @@
 :root{
-    --teal: #031634;
+    /* this is the css pseud-class which matches the root element of the tree representing the documnet.
+       In html, the :root class the html element and is identical to the selector html, except that its specifity is higher. 
+    */
+    --teal: #031634; /* this -- declares that this is not a css property instead it is a variable. */
     --cobalt: #033649;
     --turquoise: #066464;
     --beige: #ceb280;
@@ -16,21 +19,101 @@ html{
 body{
     margin: 0;
     padding: 0;
-    color: white;
+    color: white; /* this color attribute changes the color of the font. */
     background-color: var(--teal);
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+#intro{
+    padding-bottom: 5rem;
+}
+#intro p{
+    font-size: 1.5rem;
+    line-height: 1.5; /* It tells how much height a line is going to take. */
+}
+
+.name span{
+    display: block;
+    color: var(--gold);
+    font-size: 4rem;
+}
+.profile{
+    padding-bottom: 1rem;
+}
+#intro h2{
+    font-size: 3rem;
+    font-weight: normal;
+}
+#experience ul{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+#experience li{
+    list-style-type: none; /* this attribute is used to do the listing of items in the way specifed after column */
+    padding: 1rem;
+}
+#experience a{
+    color: white;
+}
+#hire{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+#hire p:last-child{
+    margin-top: 3rem;
+}
+.section-turquoise{
+    background-color: var(--turquoise);
+}
+nav{
+    font-size: 80%;
+    padding: 1rem;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+nav li:first-child{
+    flex-grow: 1;
+    font-size: 1.5rem;
+}
+nav a:hover{
+    color: var(--beige);
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
 /* ------------------Notes ---------------------------------------- 
 
     * Every heading inside your html file has a by default margin of "1em" assigned to that.
+    * There are two measurement unit 
+            1) em 
+            2) rem
     * Even if we give 0 margin to any html element , even then they will not collide with other html element.
       WHY???
         -> jab do adjacent html elements ko margin provide kiya jata hai to vertical direction unka margin add nhi 
            hota bulki dono element me se jika margin bada hai wo margin vertical direction me apply ho jata hai.  
-           Article(StackOverflow.com)
+                ----Article(StackOverflow.com)
 
 
 */
