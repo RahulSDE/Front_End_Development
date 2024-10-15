@@ -1,0 +1,36 @@
+:root{
+    --teal: #031634;
+    --cobalt: #033649;
+    --turquoise: #066464;
+    --beige: #ceb280;
+    --gold: #eaddcc;
+
+
+}
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: var(--teal);
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/* ------------------Notes ---------------------------------------- 
+
+    * Every heading inside your html file has a by default margin of "1em" assigned to that.
+    * Even if we give 0 margin to any html element , even then they will not collide with other html element.
+      WHY???
+        -> jab do adjacent html elements ko margin provide kiya jata hai to vertical direction unka margin add nhi 
+           hota bulki dono element me se jika margin bada hai wo margin vertical direction me apply ho jata hai.  
+           Article(StackOverflow.com)
+
+
+*/

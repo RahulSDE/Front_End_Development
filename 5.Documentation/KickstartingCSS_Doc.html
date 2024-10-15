@@ -1,6 +1,6 @@
 <!-- 
 ------RESOURCES TO BE USED FOR CSS?***********************************************
-        * 1) color.adobe.com/explore -> to check color combination i.e. which combination will look good.
+        * 1) color.adobe.com/explore -> to check color combination i.e. which color combination will look good together.
           2) fontpair.co/all         -> to check the differnt kind of fonts that we can use for our website.
           3) these website are used to read the documentation of css     -> css-tricks.com    
                                                                          -> mdn css article 
@@ -8,8 +8,9 @@
 -----WHAT IS CSS????***************************************************************
         * css stand for "cascading style sheets"
         * css uses cascading algorithm to  style the sheet.
+            -> if we are applying styling to an html element and there are more than one code pointers which are styling the element
+               then which styling will be given the precedence is decided by cascading algorithm.
         * css is used in html to style the page.
-        * css is used by using style attributes of html.
         * one valid css style or instruction ends with semi colon.
         * there are three ways by which we can apply css
             1) Inline css.
@@ -36,8 +37,9 @@
     
 ------ WHAT IS INLINE CSS????******************************************************
         * Inline css means if there is an HTML element i.e. all the html element like h1, div, span etc. have special attribute 
-          name style where we can write a bunch of css.
-        * Inline css can be applied by using style attribute of an html element.
+          named "style" where we can write a bunch of css.
+        * Inline css can be applied by using "style" attribute of an html element.
+        * One valid styling of inline css ends with semi-colon.
         * For ex. 
                 <h2 style="color:gold; font=50px;"> Rahul singh </h2>.
         * Inline css is not so good because when we write a lot of css then the html page
@@ -71,19 +73,6 @@
         * For ex.
                 <link rel="stylesheet" href="Style.css">
 
----- CSS ATTRIBUTES TO STYLE THE SHEET.********************************************
-        * color:
-            -> this color properties of css is used to provide color to the html element.
-            -> to impart color to the html element we can use the following properties
-                ... directly specify the color name i.e. color=gold;
-                ... specify the hexadecimal code of the color i.e. color = #00000000;
-                ... specify the rgb combination of the color i.e. color = rgb(100,100,100);
-
-        * font-size: 
-            -> this attribute is used to change size of font of the html element.
-        
-        * background-color:
-            -> this attribute is used to change the color of the background of html element.
 
 ---- SELECTORS???*******************************************************************
         * Selectors is a mechanism which css provide us to collectively select a bunch of html elements together
@@ -128,7 +117,9 @@
                         }
 
         5) ATTRIBUTE SELECTOR:
-                -> this selector selects the html element having the mentioned attribute and apply styling to it.
+                -> this selector selects all the html element having the mentioned attribute and apply styling to it.
+                -> syntax: 
+
         
         6) SELECTOR LIST:
                 -> agar aap ek se jyada html element pe same styling apply karna chahte hai to ek saath bhi kar sake hai
@@ -138,4 +129,59 @@
                        div,h2{
                             font-size:larger;
                        }
+
+        7) COMBINATORS:
+                
+                7.1) DESCENDANT COMBINATOR:
+                    -> The descendant combinator — typically represented by a single space (" ") character — combines two selectors 
+                       such that elements matched by the second selector are selected if they have an ancestor 
+                       (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector.
+                    -> for ex:
+                            A B{
+                                color: white;
+                            }
+                            all the html element B which is the descendant of A will be selected and styling will be applied to it only.
+
+                7.2) CHILD COMBINATOR:                
+                    -> The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector 
+                       that are the direct children of elements matched by the first. Descendant elements further down the hierarchy don't match.
+                       For example, to select only <p> elements that are direct children of <article> elements:
+                        article > p{
+
+                        }
+                
+                7.3) NEXT-SIBLING COMBINATOR / ADJACENT-SIBLING COMBINATOR:
+                    -> The next-sibling combinator (+) is placed between two CSS selectors. It matches only those elements matched by the second 
+                       selector that are the next sibling element of the first selector. For example, to select all <img> elements that are 
+                       immediately preceded by a <p> element:
+                        p + img{
+                        }
+                
+                7.4) GENRAL SIBLINGS COMBINATOR:
+                    -> If you want to select siblings of an element even if they are not directly adjacent, then you can use the subsequent-sibling 
+                    combinator (~). To select all <img> elements that come anywhere after <p> elements, we'd do this:
+                        p ~ img{
+                        }
+                
+        8) PSEUDO CLASSES AND PSEUDO ELEMENTS:
+            -> If you want to make some changes to the selected html element based on some event.
+               for ex: if you are hovering over to an element then you want to make some changes.
+               In this case pseudo classes and pseudo elements are used.
+            
+            8.1) PSEUDO CLASSES
+                    -> represented by : 
+                    -> for ex: 
+                       a :hover{
+                            text-decoration:none;
+                       }
+                       what this example is saying that whenever we hover over anchor tag then the underline should go away.
+                       hover class is not actually present in the html doc.
+
+                    8.1.1) :visited pseudo class
+                    8.1.2) :hover pseudo class
+            
+            8.2) PSEUDO ELEMENTS:
+                    -> represented by ::
+                    -> pseudo elements are the html elements that are not actually present in the html doc.
+            
     -->

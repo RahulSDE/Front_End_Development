@@ -1,0 +1,42 @@
+<!--
+------ BOX MODEL OF CSS ****************
+        * There are different sections in box model.
+        * Every html element follows box model.
+        * In CSS there is a property called "box-sizing" - this property helps us to decide the box model.
+        * There are two ways a box get width:
+            1) CONTENT-BOX:
+                -> when box-sizing is "content-box" then the the width assigned to the html element is fully allocated to the 
+                   actual content of the html element.
+                -> the default "box-sizing" is the "content-box".
+            2) BORDER-BOX:
+                -> when box-sizing is "border-box" then the width assigned to the html element is allocated to 
+                    the border+padding+actual content.
+            3) INHERIT:
+                -> this attribute is used to tell that whatever will be the box-sizing of the parent will be inherited by the 
+                   child element also.
+
+        * every content that you prepare using html, in css they are rendered in the form of box.
+        for ex:
+                <div>
+                    ......
+                    ......
+                </div
+                -> here div is an html element which is rendered on a website in the form of a box.
+                -> for example if i give width attribute to the div tag then the actual width will be distributed to different 
+                   layers of box.
+        
+        * Every box has muliple parts:
+            1) CONTENT-AREA:
+                -> the actual content that is written within html element.
+                -> some space will be occupied by the content written in html element.
+                -> the content part is wrapped by one more layer called "padding".
+            2) PADDING:
+                -> the padding adds internal spacing to your actual content.
+                -> the padding is wrapped by one more layer called "border".
+            3) BORDER:
+                -> the border adds space outside padding.
+                -> the border is wrapped by one more layer called "margin".
+            4) MARGIN:
+                -> margin is the space outside the box.
+                -> i.e. if there are two boxes then the margin will add space between these two boxes.
+-->
